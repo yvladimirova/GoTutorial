@@ -1,11 +1,10 @@
 package main
 
 import (
+	"log"
+	"time"
 
 	"github.com/hajimehoshi/ebiten"
-	"log"
-	"worldiety.de/training03/assets"
-
 )
 
 var shipImg *ebiten.Image
@@ -20,12 +19,12 @@ func must(err error) {
 func main() {
 	mygame := Game{}
 	mygame.setup()
-	if err := ebiten.Run(mygame.render,  640, 480, 1.0, "mygame"); err != nil {
+	if err := ebiten.Run(mygame.render, 640, 480, 1.0, "mygame"); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func duration() float64  {
+func duration() float64 {
 	newTime = float64(time.Now().UnixNano())
 	deltaTime := (newTime - oldTime) / float64(time.Millisecond)
 	oldTime = newTime
