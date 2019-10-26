@@ -2,6 +2,7 @@
 Aufgabe 2:
 
 1.Was bedeutet $USER im Kontext der Bash?
+
 2.Weshalb sind die Anführungsstriche wichtig?
 
 ANTWORT:
