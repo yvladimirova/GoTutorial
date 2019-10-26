@@ -27,6 +27,7 @@ Aufgabe 5:
 Unterschied im Error-Handling zwischen Go und Java
 
 ANTWORT:
+
 Der erste Unterschied liegt daran, dass die Errors in Go, wie Rob Pike im Titel seines Artikels sagt, bestimmte Werte(Values) sind. 
 Dem Go-Team ist es gelungen, auf Exceptions wie z.B in Java zu verzichten und das explizite Ablesen der Fehler zu ermöglichen. Diese Genauigkeit macht den Code zwar schwiereger lesbar, im Nachhinein aber kann man verstehen wo der Fehler ist. 
 Soll ein Go-Call ein Fehler ergeben, wie schon erwähnt, ist er eine Value wie jede andere und bewirkt keine automatische Veränderungen im Ablauf eines Programms. 
@@ -59,6 +60,7 @@ Aufgabe 7:
 
 ANTWORT:
 
+
 1. Es wird eine Kopie vom Typ gemacht und an die angegebene Funktion angepasst. Im Nachhinein enthält die Funktion den gleichen Typ, aber "besitzt" einen anderen, eigenen Platz im Speicher.
 
 2. Ein Pointer-Receiver dagegen, passt die Adresse vom Typ zur Funktion an. Die funktion enthält dann "den Weg" zum Typ, oder seine "Adresse" (auf english - reference)
@@ -71,6 +73,7 @@ ANTWORT:
 
 
 Aufgabe 8:
+
 
 Die Beobachtung:
 
