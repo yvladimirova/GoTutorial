@@ -64,9 +64,4 @@ func (g *Game) render(screen *ebiten.Image) error {
 	return nil
 }
 
-func duration() float64  {
-	newTime = float64(time.Now().UnixNano())
-	deltaTime := (newTime - oldTime) / float64(time.Millisecond)
-	oldTime = newTime
-	return deltaTime
-}
+
