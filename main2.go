@@ -24,3 +24,10 @@ func main() {
 		log.Fatal(err)
 	}
 }
+
+func duration() float64  {
+	newTime = float64(time.Now().UnixNano())
+	deltaTime := (newTime - oldTime) / float64(time.Millisecond)
+	oldTime = newTime
+	return deltaTime
+}
