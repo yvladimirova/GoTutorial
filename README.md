@@ -61,11 +61,17 @@ Aufgabe 7:
 ANTWORT:
 
 
-1. Es wird eine Kopie vom Typ gemacht und an die angegebene Funktion angepasst. Im Nachhinein enthält die Funktion den gleichen Typ, aber "besitzt" einen anderen, eigenen Platz im Speicher.
+1. Wenn der Receiver in einer Funktion ein Value ist, wird eine Kopie vom Typ T gemacht und an die Funktion angepasst. Im Nachhinein enthält die Funktion den gleichen Typ T wie angegeben, aber "besitzt" einen anderen, eigenen Platz im Speicher.
 
-2. Ein Pointer-Receiver dagegen, passt die Adresse vom Typ zur Funktion an. Die funktion enthält dann "den Weg" zum Typ, oder seine "Adresse" (auf english - reference)
+2. Ein Pointer-Receiver dagegen, passt die Adresse vom Typ T zur Funktion an. Die funktion enthält dann "den Weg" zum Typ T, oder seine "Adresse" (auf english - reference).
 
-3. Der erste Unterschied ist der Anwendungszweck: Wenn es gewollt ist, dass eine Funktion die Werte vom Typ T verändert, soll man einen Pointer als den Receiver-Typ benutzen. Der Optimierung halber wird einen Pointer benutzt, wenn eine Struktur sehr
+3. Der erste Unterschied ist der Anwendungszweck: Wenn es gewollt ist, dass eine Funktion die Werte vom Typ T verändert, soll man im Receiver einen Pointer benutzen. Wenn aber eine Variable nur in dieser Funiktion anzuwenden ist und 
+Ein noch wichtiger Unterschied liegt daran, dass ein Value sowohl mit einem Pointer als auch mit einem Value aufgerufen werden kann, ein Pointer wird aber nur mit einem anderen Pointer aufgerufen(&).
+
+4. Eine Call-by-value Funktion arbeitet mit einer Kopie vom Typ T. Demnach wird der Typ T nicht von der Funktion beinträchtigt und hat außer dieser Funktion den gleichen Inhalt, da es ein aktueller und ein von der Funktion abhängiger Argument im Speicher erzeugt werden
+   Eine Call-by-value Funktion beeinflusst/ändert den Typ T, weil die unmittelbar mit dem Typ T durch seine Adresse 
+
+5. 
 
 
 
